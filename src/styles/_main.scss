@@ -1,0 +1,204 @@
+@import "_fonts";
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gilroy", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 260px;
+  @include breakpoint(1700px) {
+    margin: 0 180px;
+  }
+  @include breakpoint(1600px) {
+    margin: 0 140px;
+  }
+  @include breakpoint(1500px) {
+    margin: 0 100px;
+  }
+  @include breakpoint(1200px) {
+    margin: 0 80px;
+  }
+  @include breakpoint(900px) {
+    margin: 0 30px;
+  }
+  @include breakpoint(600px) {
+    margin: 0 15px;
+  }
+  @include breakpoint(370px) {
+    margin: 0 10px;
+  }
+}
+
+.btn-blue {
+  padding: 12px 24px;
+  background-color: $vivid-blue;
+  border-radius: 12px;
+  color: $light-grayish-blue;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 32px;
+  @include breakpoint(1300px) {
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  @include breakpoint(700px) {
+    padding: 3px 12px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+.btn-white {
+  padding: 16px 28px;
+  background-color: $light-grayish-blue;
+  border-radius: 12px;
+  color: $vivid-blue;
+  text-decoration: none;
+  border: none;
+  font-size: 18px;
+  line-height: 32px;
+  cursor: pointer;
+  @include breakpoint(1300px) {
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 22px;
+  }
+  @include breakpoint(700px) {
+    padding: 3px 12px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+}
+
+.block {
+  background-color: $white;
+  padding: 40px;
+  border-radius: 32px;
+  @include breakpoint(1100px) {
+    padding: 20px;
+  }
+  @include breakpoint(700px) {
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.5;
+    @include breakpoint(1100px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+    @include breakpoint(500px) {
+      font-size: 10px;
+      line-height: 15px;
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 24px;
+    @include breakpoint(1100px) {
+      margin-bottom: 12px;
+    }
+    @include breakpoint(500px) {
+      margin-bottom: 8px;
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: 32px;
+      margin-left: 21px;
+      @include breakpoint(1300px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+      @include breakpoint(1100px) {
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 15px;
+      }
+      @include breakpoint(500px) {
+        font-size: 14px;
+        line-height: 24px;
+        margin-left: 10px;
+      }
+    }
+
+    img {
+      width: 48px;
+      height: 48px;
+      @include breakpoint(1100px) {
+        width: 30px;
+        height: 30px;
+      }
+      @include breakpoint(500px) {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}
+
+.title {
+  font-size: 56px;
+  line-height: 72px;
+  @include breakpoint(1300px) {
+    font-size: 40px;
+    line-height: 52px;
+  }
+  @include breakpoint(1100px) {
+    font-size: 35px;
+    line-height: 38px;
+  }
+  @include breakpoint(700px) {
+    font-size: 25px;
+    line-height: 28px;
+  }
+  @include breakpoint(500px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+}
+
+.mb{
+  margin-bottom: 24px;
+  @include breakpoint(1000px) {
+    margin-bottom: 12px;
+  }
+}
+
+.active {
+  background-color: #029EEB;
+  border-radius: 14px;
+  padding: 12px 20px;
+  color: $white !important;
+  background-image: url("../assets/image/personal-area/sidebar/user-white.png") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  margin-bottom: 32px !important;
+  @include breakpoint(500px) {
+    margin-bottom: 15px !important;
+  }
+  span {
+    margin-left: 50px;
+  }
+}
